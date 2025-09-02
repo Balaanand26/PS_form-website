@@ -5,10 +5,12 @@ import bgg from "./assets/images/bg12.png";
 
 const Login = () => {
   const [formData, setFormData] = useState({ username: "", password: "" });
-  const navigate = useNavigate();
+  const navigate = useNavigate(); //
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+
+    
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
