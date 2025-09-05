@@ -17,7 +17,7 @@ const LoginFail = () => {
     {
       e.preventDefault();
 
-      const response = await fetch("http://localhost:3000/fail", {
+      const response = await fetch("https://ps-form-website-backend.onrender.com/fail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
